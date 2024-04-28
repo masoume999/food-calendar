@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".Activity.NameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="اسم و فامیل"
+            android:fontFamily="@font/bmitra"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitra"
+            android:text="توی «تقویم آشپزی» چی صدات کنیم؟\n برامون بنویس"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/background_edittext"
+            android:hint="مثلا: سامان گلریز"
+            android:radius="50dp"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:fontFamily="@font/bmitra"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@drawable/background_button"
+            android:text="ثبت"
+            android:fontFamily="@font/bmitra"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:foreground="@color/foreGround"
+            android:foregroundTintMode="src_over"/>
+
+    </LinearLayout>
+
+</ScrollView>

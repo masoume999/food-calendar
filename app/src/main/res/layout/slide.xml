@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bglayout"
+    >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/slide_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/slide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmitra"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/slide_title_textsize"
+            android:textStyle="bold"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/slide_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmitra"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/slide_descrption_textsize"
+            />
+
+
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".Activity.verificationCode_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="کد تایید"
+            android:fontFamily="@font/bmitra"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/txtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitra"
+            android:text="کد تایید ارسال شد"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:background="@drawable/background_edittext"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/inputCode1"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode2"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode3"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode4"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                tools:ignore="LabelFor"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textResendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="ارسال دوباره"
+            android:textColor="@color/green"
+            android:fontFamily="@font/bmitra"
+            android:textSize="24sp"/>
+
+
+        <Button
+            android:id="@+id/buttonVerify"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@drawable/background_button"
+            android:text="تایید"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:fontFamily="@font/bmitra"
+            android:foreground="@color/foreGround"
+            android:foregroundTintMode="src_over"/>
+
+    </LinearLayout>
+
+</ScrollView>

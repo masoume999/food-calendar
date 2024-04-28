@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/BottomBtnHome"
+        android:enabled="true"
+        android:icon="@drawable/bottom_btn1"
+        android:title="خانه"/>
+
+    <item
+        android:id="@+id/BottomBtnPlan"
+        android:enabled="true"
+        android:icon="@drawable/plan_btn"
+        android:title="تقویم آشپزی"/>
+
+    <item
+        android:id="@+id/BottomBtnProfile"
+        android:enabled="true"
+        android:icon="@drawable/bottom_btn2"
+        android:title="پروفایل من"/>
+</menu>

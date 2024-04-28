@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RadioButton
+        android:id="@+id/rview_radiobutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView_rvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginLeft="74dp"
+            android:layout_marginStart="74dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bmitra"
+            android:text="TextView"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/Edit_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@mipmap/edit_icon" />
+
+        <ImageButton
+            android:id="@+id/Show_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/show_icon"
+            />
+
+        <ImageButton
+            android:id="@+id/Delete_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/delete_icon"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.CalendarActivity"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/ADDSDay"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:dropDownWidth="wrap_content"
+                        android:spinnerMode="dropdown"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="60dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/lunch1_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان نهار"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/lunch1_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت اول"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/lunch1"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch11"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch1_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/lunch1"
+                                    app:layout_constraintTop_toTopOf="@id/lunch1"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp"
+                                    />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/lunch2_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان نهار"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/lunch2_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت دوم"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/lunch2"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch22"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch2_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/lunch2"
+                                    app:layout_constraintTop_toTopOf="@id/lunch2"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp"/>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/lunch3_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان نهار"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/lunch3_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت سوم"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/lunch3"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch33"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+                                <ImageView
+                                    android:id="@+id/lunch3_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/lunch3"
+                                    app:layout_constraintTop_toTopOf="@id/lunch3"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="60dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/dinner1_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان شام"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/dinner1_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت اول"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/dinner1"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/dinner11"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+                                <ImageView
+                                    android:id="@+id/dinner1_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/dinner1"
+                                    app:layout_constraintTop_toTopOf="@id/dinner1"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/dinner2_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان شام"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/dinner2_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت دوم"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/dinner2"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/dinner22"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+
+                                <ImageView
+                                    android:id="@+id/dinner2_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/dinner2"
+                                    app:layout_constraintTop_toTopOf="@id/dinner2"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                android:layout_marginRight="7dp">
+
+                                <TextView
+                                    android:id="@+id/dinner3_txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="عنوان شام"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/dinner3_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="اولویت سوم"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorDivider"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/dinner3"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:background="@drawable/background_image1"
+                                    tools:ignore="MissingConstraints"
+                                    android:clickable="false"/>
+
+                                <ImageView
+                                    android:id="@+id/dinner33"
+                                    android:layout_width="95dp"
+                                    android:layout_height="95dp"
+                                    android:src="@drawable/tick"
+                                    android:background="@drawable/check_foods"
+                                    tools:ignore="MissingConstraints"
+                                    android:visibility="invisible"/>
+
+
+                                <ImageView
+                                    android:id="@+id/dinner3_plus"
+                                    android:layout_width="39dp"
+                                    android:layout_height="39dp"
+                                    android:src="@drawable/plus_icon"
+                                    tools:ignore="MissingConstraints"
+                                    app:layout_constraintRight_toRightOf="@id/dinner3"
+                                    app:layout_constraintTop_toTopOf="@id/dinner3"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginRight="28dp" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/line"
+                        android:layout_width="2dp"
+                        android:layout_height="900dp"
+                        android:background="@color/colorDivider1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="74dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="30dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="70dp">
+
+                            <ImageView
+                                android:id="@+id/lunch_button1"
+                                android:layout_width="72dp"
+                                android:layout_height="38dp"
+                                android:background="@drawable/background_button1"
+                                android:gravity="center_horizontal"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/lunch_button_txt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="نهار"
+                                android:textColor="@color/colorDivider"
+                                android:textSize="14.1sp"
+                                tools:ignore="MissingConstraints"
+                                app:layout_constraintTop_toTopOf="@id/lunch_button1"
+                                app:layout_constraintRight_toRightOf="@id/lunch_button1"
+                                android:layout_marginTop="8.6dp"
+                                android:layout_marginRight="26.5dp"/>
+
+                            <ImageView
+                                android:id="@+id/lunch_button2"
+                                android:layout_width="72dp"
+                                android:layout_height="38dp"
+                                android:background="@drawable/background_button2"
+                                android:gravity="center_horizontal"
+                                tools:ignore="MissingConstraints"
+                                android:visibility="invisible"/>
+
+                            <TextView
+                                android:id="@+id/lunch_button_txt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="نهار"
+                                android:textColor="@color/white"
+                                android:textSize="14.1sp"
+                                tools:ignore="MissingConstraints"
+                                app:layout_constraintTop_toTopOf="@id/lunch_button1"
+                                app:layout_constraintRight_toRightOf="@id/lunch_button1"
+                                android:layout_marginTop="8.6dp"
+                                android:layout_marginRight="26.5dp"
+                                android:visibility="invisible"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="348dp">
+
+                            <ImageView
+                                android:id="@+id/dinner_button1"
+                                android:layout_width="72dp"
+                                android:layout_height="38dp"
+                                android:background="@drawable/background_button1"
+                                android:gravity="center_horizontal"
+                                tools:ignore="MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/dinner_button_txt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="شام"
+                                android:textColor="@color/colorDivider"
+                                android:textSize="14.1sp"
+                                tools:ignore="MissingConstraints"
+                                app:layout_constraintTop_toTopOf="@id/dinner_button1"
+                                app:layout_constraintRight_toRightOf="@id/dinner_button1"
+                                android:layout_marginTop="8.6dp"
+                                android:layout_marginRight="26.5dp"/>
+
+                            <ImageView
+                                android:id="@+id/dinner_button2"
+                                android:layout_width="72dp"
+                                android:layout_height="38dp"
+                                android:background="@drawable/background_button2"
+                                android:gravity="center_horizontal"
+                                tools:ignore="MissingConstraints"
+                                android:visibility="invisible"/>
+
+                            <TextView
+                                android:id="@+id/dinner_button_txt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="شام"
+                                android:textColor="@color/white"
+                                android:textSize="14.1sp"
+                                tools:ignore="MissingConstraints"
+                                app:layout_constraintTop_toTopOf="@id/dinner_button2"
+                                app:layout_constraintRight_toRightOf="@id/dinner_button2"
+                                android:layout_marginTop="8.6dp"
+                                android:layout_marginRight="26.5dp"
+                                android:visibility="invisible"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layoutDirection="rtl"
+    android:background="@drawable/card_background"
+    android:elevation="3dp"
+    android:id="@+id/suggestionDinner">
+
+    <ImageButton
+        android:id="@+id/imageBtn_food_dinner"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:srcCompat="@drawable/pizza2" />
+
+
+    <TextView
+        android:id="@+id/title_food_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/bmitra"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="پيتزا"
+        android:textAlignment="center"
+        android:textColor="#373b54"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/time1_food_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmitra"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="6dp"
+            android:text="زمان تهیه:"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time2_food_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmitra"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="4dp"
+            android:text="50 دقيقه"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            />
+    </LinearLayout>
+</LinearLayout>

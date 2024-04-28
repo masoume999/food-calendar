@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CategoriesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:padding="5dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/modernFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/modern"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مدرن"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/iranianFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/irani"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ایرانی"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dietaryFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dietary"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="رژیمی"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/breakfast"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:shadowColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/breakfast"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="صبحانه"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vegetableFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vegetable"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="گیاهی"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seaFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/seafood"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دریایی"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/melalFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/melal"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ملل"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mahalliFood"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mahalli"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="محلی"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dessert"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dessert"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دسر"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/appetizer"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/appetizer"
+                        android:foreground="#96222f3e"
+                        android:foregroundTintMode="src_over"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="پیش غذا"
+                        android:shadowRadius="2"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/bmitra"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp" />
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

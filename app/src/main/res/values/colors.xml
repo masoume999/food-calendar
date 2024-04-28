@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dot_inactive">#AFAAAA</color>
+    <color name="dot_active">#000000</color>
+    <color name="slid1_bgcolor">#FFCE77</color>
+    <color name="slid2_bgcolor">#D19292</color>
+    <color name="slid3_bgcolor">#83BAFA</color>
+    <color name="green">#21DF80</color>
+    <color name="orange">#FF9800</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="foreGround">#97FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="colorDivider">#C3C3C3</color>
+    <color name="colorDivider1">#F8F8F8</color>
+</resources>

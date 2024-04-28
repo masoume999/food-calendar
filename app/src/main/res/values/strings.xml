@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FoodCalender</string>
+    <string name="slide1_title">"غذاهای متنوع"</string>
+    <string name="slide1_description">"دلت میخواد یک غذای جدید امتحان کنی؟‌ «تقویم آشپزی» بهت کمک میکنه طرز تهیه‌ی صدها غذاهای متنوع رو یاد بگیری."</string>
+    <string name="slide2_title">"برنامه‌ی غذایی"</string>
+    <string name="slide2_description">"نمیدونی واسه ناهار یا شام چی بپزی؟ با برنامه‌ی غذایی «تقویم آشپزی» برای تک‌ تک وعده‌هات برنامه داشته باش."</string>
+    <string name="slide3_title">"اضافه‌کردن رویداد"</string>
+    <string name="slide3_description">"مشکلت اینه که یادت میره چه غذاهایی درست کنی؟ با قسمت اضافه‌کردن رویداد در «تقویم آشپزی» میتونی هر روز غذاهایی که میخواهی درست کنی به خودت یادآوری کنی."</string>
+
+    <string-array name="slide_title">
+        <item>@string/slide1_title</item>
+        <item>@string/slide2_title</item>
+        <item>@string/slide3_title</item>
+    </string-array>
+
+    <string-array name="slide_description">
+        <item>@string/slide1_description</item>
+        <item>@string/slide2_description</item>
+        <item>@string/slide3_description</item>
+    </string-array>
+
+    <string name="Skip">"رد شدن"</string>
+    <string name="next">"بعدی"</string>
+    <string name="GotIt">"متوجه شدم"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="categories">دسته بندی ها</string>
+    <string name="iranianFood">ایرانی</string>
+    <string name="modernFood">مدرن</string>
+    <string name="breakfast">صبحانه</string>
+    <string name="dietaryFood">رژیمی</string>
+    <string name="seaFood">دریایی</string>
+    <string name="vegetableFood">گیاهی</string>
+    <string name="mahalliFood">محلی</string>
+    <string name="melalFood">ملل</string>
+    <string name="appetizer">پیش غذا</string>
+    <string name="dessert">دسر</string>
+</resources>
